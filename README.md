@@ -44,3 +44,44 @@ To start a local ICP testnet in the background, run the following command:
 
 ```bash
 dfx start --background
+```
+
+# Wallet Project Backend
+
+## Deployment Instructions
+
+### Deploy the Canisters
+
+To deploy the backend canister to the local testnet, run:
+
+```bash
+dfx deploy
+```
+
+### Get the Canister ID
+
+After deploying, retrieve the canister ID by running:
+
+```bash
+dfx canister id wallet_project_backend
+```
+
+## Testing Instructions
+
+To ensure that the canister's logic functions correctly, you can run the unit tests included in the project.
+
+### Running Unit Tests
+
+To execute the tests, run:
+
+```bash
+cargo test
+```
+
+## Unit Test Coverage
+
+The project includes tests for the following key areas:
+
+- **Balance Initialization**: Verifies that the balance is set to 1000 tokens upon initialization.
+- **Balance Retrieval**: Ensures that the balance retrieval mechanism works correctly.
+- **Token Transfer**: Verifies that tokens can be transferred from one user to another, including handling insufficient balance scenarios.
