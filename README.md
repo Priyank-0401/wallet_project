@@ -16,25 +16,27 @@ This project is a token wallet built on the Internet Computer (ICP) platform. It
 
 Ensure that the following software is installed on your system:
 
-- [dfx](https://internetcomputer.org/docs/current/developers-guide/install/dfx/) for managing canisters on the ICP network.
-- [Rust](https://www.rust-lang.org/learn/get-started) to develop and compile the backend logic.
-- [Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) for managing Rust packages.
+- **dfx**: The SDK for managing canisters on the Internet Computer (ICP) network. Follow the official guide to install it: dfx installation guide.
+- **Rust**: The programming language used for developing and compiling the backend logic of canisters. Install Rust from the official website: Rust installation guide.
+- **Cargo**: The Rust package manager (included when you install Rust).
 
 ### Installing Dependencies
 
-1. In the project directory, run the following command to start the local ICP testnet:
+#### Start the Local ICP Testnet
+
+1. In your project directory, run the following command to start the local ICP testnet in the background:
 
     ```bash
     dfx start --background
     ```
 
 2. Deploy the backend canister to the testnet:
+    
+     ```bash
+     dfx deploy
+     ```
 
-    ```bash
-    dfx deploy
-    ```
-
-This will set up the local testnet and deploy the backend canister.
+    This will set up the local testnet and deploy the backend canister.
 
 ## Deployment Instructions
 
