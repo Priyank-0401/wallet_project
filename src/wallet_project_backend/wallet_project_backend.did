@@ -1,0 +1,10 @@
+type MyResult = variant {
+    Ok;
+    Err : text;
+};
+
+service : {
+    init_balance : () -> ();
+    get_balance : () -> (nat64);
+    send_tokens : (principal, nat64) -> (MyResult);
+};
